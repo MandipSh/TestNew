@@ -1,0 +1,14 @@
+*** Settings ***
+Library    Selenium2Library   
+
+
+*** Variable ***
+*** Test Cases ***
+MyFirstTest
+    Log    Hello World...  
+    Log    Welcome to Robot Framework. 
+    
+#FirstSeleniumTest
+    #Open Browser      https://google.com    googlechrome  
+    #Selenium2Library.Input Text    name=q    testtest
+    #Selenium2Library.Click Element    id=gsr

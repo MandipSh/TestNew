@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190708 22:52:52.585" generator="Robot 3.1.1 (Python 2.7.10 on darwin)">
+<suite source="/Users/mandip/eclipse-workspace/RobotProject1" id="s1" name="RobotProject1">
+<suite source="/Users/mandip/eclipse-workspace/RobotProject1/test" id="s1-s1" name="Test">
+<suite source="/Users/mandip/eclipse-workspace/RobotProject1/test/testsuite1.robot" id="s1-s1-s1" name="Testsuite1">
+<test id="s1-s1-s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World...</arg>
+</arguments>
+<msg timestamp="20190708 22:52:53.029" level="INFO">Hello World...</msg>
+<status status="PASS" endtime="20190708 22:52:53.029" starttime="20190708 22:52:53.028"></status>
+</kw>
+<status status="PASS" endtime="20190708 22:52:53.029" critical="yes" starttime="20190708 22:52:53.027"></status>
+</test>
+<test id="s1-s1-s1-t2" name="FirstSeleniumTest">
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>executable_path=Users:\\mandip\\Downloads\\chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20190708 22:52:53.031" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190708 22:52:53.054" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20190708 22:52:53.055" starttime="20190708 22:52:53.053"></status>
+</kw>
+<msg timestamp="20190708 22:52:53.059" level="FAIL">WebDriverException: Message: 'Users:\mandip\Downloads\chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20190708 22:52:53.059" starttime="20190708 22:52:53.031"></status>
+</kw>
+<status status="FAIL" endtime="20190708 22:52:53.060" critical="yes" starttime="20190708 22:52:53.030">WebDriverException: Message: 'Users:\mandip\Downloads\chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<status status="FAIL" endtime="20190708 22:52:53.061" starttime="20190708 22:52:52.640"></status>
+</suite>
+<status status="FAIL" endtime="20190708 22:52:53.063" starttime="20190708 22:52:52.637"></status>
+</suite>
+<status status="FAIL" endtime="20190708 22:52:53.064" starttime="20190708 22:52:52.616"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="RobotProject1" pass="1">RobotProject1</stat>
+<stat fail="1" id="s1-s1" name="Test" pass="1">RobotProject1.Test</stat>
+<stat fail="1" id="s1-s1-s1" name="Testsuite1" pass="1">RobotProject1.Test.Testsuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
