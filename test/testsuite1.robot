@@ -7,6 +7,7 @@ Library    Selenium2Library
 MyFirstTest
     Log    Hello World...  
     Log    Welcome to Robot Framework. 
+    Log    Jenkins Trigger Test.
     
 #FirstSeleniumTest
     #Open Browser      https://google.com    googlechrome  

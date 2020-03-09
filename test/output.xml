@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200308 22:08:33.870" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<robot rpa="false" generated="20200308 23:00:42.450" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
 <suite source="/Users/mandip/eclipse-workspace/RobotProject1/test/testsuite1.robot" id="s1" name="Testsuite1">
 <test id="s1-t1" name="MyFirstTest">
 <kw name="Log" library="BuiltIn">
@@ -7,20 +7,20 @@
 <arguments>
 <arg>Hello World...</arg>
 </arguments>
-<msg timestamp="20200308 22:08:34.209" level="INFO">Hello World...</msg>
-<status status="PASS" endtime="20200308 22:08:34.209" starttime="20200308 22:08:34.208"></status>
+<msg timestamp="20200308 23:00:42.698" level="INFO">Hello World...</msg>
+<status status="PASS" endtime="20200308 23:00:42.698" starttime="20200308 23:00:42.697"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Welcome to Robot Framework.</arg>
 </arguments>
-<msg timestamp="20200308 22:08:34.209" level="INFO">Welcome to Robot Framework.</msg>
-<status status="PASS" endtime="20200308 22:08:34.209" starttime="20200308 22:08:34.209"></status>
+<msg timestamp="20200308 23:00:42.698" level="INFO">Welcome to Robot Framework.</msg>
+<status status="PASS" endtime="20200308 23:00:42.698" starttime="20200308 23:00:42.698"></status>
 </kw>
-<status status="PASS" endtime="20200308 22:08:34.209" critical="yes" starttime="20200308 22:08:34.208"></status>
+<status status="PASS" endtime="20200308 23:00:42.698" critical="yes" starttime="20200308 23:00:42.697"></status>
 </test>
-<status status="PASS" endtime="20200308 22:08:34.210" starttime="20200308 22:08:33.874"></status>
+<status status="PASS" endtime="20200308 23:00:42.699" starttime="20200308 23:00:42.453"></status>
 </suite>
 <statistics>
 <total>
