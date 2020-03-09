@@ -7,7 +7,7 @@ MyFirstTest
     Log    Hello World...  
     Log    Welcome to Robot Framework. 
     Log    Jenkins Trigger Test 2
-    Log    Email Test 4.
+    Log    Email Test 5.
     
 #FirstSeleniumTest
     #Open Browser      https://google.com    googlechrome  
