@@ -1,5 +1,4 @@
 *** Settings ***
-Library    Selenium2Library   
 
 
 *** Variable ***
