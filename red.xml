@@ -4,6 +4,8 @@
     <relativeTo>WORKSPACE</relativeTo>
     <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="/Library/Python/2.7/site-packages"/>
     <referencedLibrary type="PYTHON" name="Selenium2Library" path="/Users/mandip/Documents"/>
+    <referencedLibrary type="PYTHON" name="G1" path="RobotProject1/test"/>
+    <referencedLibrary type="PYTHON" name="G2" path="RobotProject1/test"/>
     <pythonpath/>
     <classpath/>
     <excludedForValidation/>

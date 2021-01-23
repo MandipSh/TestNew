@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190708 22:52:52.585" generator="Robot 3.1.1 (Python 2.7.10 on darwin)">
+<robot rpa="false" generated="20210122 20:36:55.003" generator="Robot 3.1.1 (Python 2.7.10 on darwin)">
 <suite source="/Users/mandip/eclipse-workspace/RobotProject1" id="s1" name="RobotProject1">
 <suite source="/Users/mandip/eclipse-workspace/RobotProject1/test" id="s1-s1" name="Test">
 <suite source="/Users/mandip/eclipse-workspace/RobotProject1/test/testsuite1.robot" id="s1-s1-s1" name="Testsuite1">
@@ -9,48 +9,107 @@
 <arguments>
 <arg>Hello World...</arg>
 </arguments>
-<msg timestamp="20190708 22:52:53.029" level="INFO">Hello World...</msg>
-<status status="PASS" endtime="20190708 22:52:53.029" starttime="20190708 22:52:53.028"></status>
+<msg timestamp="20210122 20:36:55.481" level="INFO">Hello World...</msg>
+<status status="PASS" endtime="20210122 20:36:55.481" starttime="20210122 20:36:55.480"></status>
 </kw>
-<status status="PASS" endtime="20190708 22:52:53.029" critical="yes" starttime="20190708 22:52:53.027"></status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Welcome to Robot Framework.</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.482" level="INFO">Welcome to Robot Framework.</msg>
+<status status="PASS" endtime="20210122 20:36:55.482" starttime="20210122 20:36:55.481"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Jenkins Trigger Test 2</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.483" level="INFO">Jenkins Trigger Test 2</msg>
+<status status="PASS" endtime="20210122 20:36:55.483" starttime="20210122 20:36:55.482"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Email Test 5.</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.483" level="INFO">Email Test 5.</msg>
+<status status="PASS" endtime="20210122 20:36:55.484" starttime="20210122 20:36:55.483"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{PATH}</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.484" level="INFO">/usr/bin:/bin:/usr/sbin:/sbin</msg>
+<status status="PASS" endtime="20210122 20:36:55.485" starttime="20210122 20:36:55.484"></status>
+</kw>
+<kw name="Greeting" library="G2">
+<arguments>
+<arg>Mandip</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.485" level="INFO">Hello, Mandip</msg>
+<status status="PASS" endtime="20210122 20:36:55.486" starttime="20210122 20:36:55.485"></status>
+</kw>
+<kw name="Generate Name" library="G1">
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210122 20:36:55.486" level="INFO">${user} = Testing_Mark[hiuuognjb]</msg>
+<status status="PASS" endtime="20210122 20:36:55.486" starttime="20210122 20:36:55.486"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.487" level="INFO">Testing_Mark[hiuuognjb]</msg>
+<status status="PASS" endtime="20210122 20:36:55.488" starttime="20210122 20:36:55.487"></status>
+</kw>
+<status status="PASS" endtime="20210122 20:36:55.489" critical="yes" starttime="20210122 20:36:55.479"></status>
 </test>
 <test id="s1-s1-s1-t2" name="FirstSeleniumTest">
-<kw name="Create Webdriver" library="Selenium2Library">
-<doc>Creates an instance of Selenium WebDriver.</doc>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
 <arguments>
-<arg>Chrome</arg>
-<arg>executable_path=Users:\\mandip\\Downloads\\chromedriver.exe</arg>
+<arg>PATH</arg>
+<arg>/Users/mandip/eclipse-workspace/RobotProject1/test/</arg>
 </arguments>
-<msg timestamp="20190708 22:52:53.031" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190708 22:52:53.054" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20190708 22:52:53.055" starttime="20190708 22:52:53.053"></status>
+<msg timestamp="20210122 20:36:55.491" level="INFO">Environment variable 'PATH' set to value '/usr/bin:/bin:/usr/sbin:/sbin:/Users/mandip/eclipse-workspace/RobotProject1/test/'.</msg>
+<status status="PASS" endtime="20210122 20:36:55.492" starttime="20210122 20:36:55.491"></status>
 </kw>
-<msg timestamp="20190708 22:52:53.059" level="FAIL">WebDriverException: Message: 'Users:\mandip\Downloads\chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</msg>
-<status status="FAIL" endtime="20190708 22:52:53.059" starttime="20190708 22:52:53.031"></status>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210122 20:36:55.492" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20210122 20:36:59.229" starttime="20210122 20:36:55.492"></status>
 </kw>
-<status status="FAIL" endtime="20190708 22:52:53.060" critical="yes" starttime="20190708 22:52:53.030">WebDriverException: Message: 'Users:\mandip\Downloads\chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</status>
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20210122 20:36:59.372" starttime="20210122 20:36:59.230"></status>
+</kw>
+<status status="PASS" endtime="20210122 20:36:59.372" critical="yes" starttime="20210122 20:36:55.490"></status>
 </test>
-<status status="FAIL" endtime="20190708 22:52:53.061" starttime="20190708 22:52:52.640"></status>
+<status status="PASS" endtime="20210122 20:36:59.374" starttime="20210122 20:36:55.069"></status>
 </suite>
-<status status="FAIL" endtime="20190708 22:52:53.063" starttime="20190708 22:52:52.637"></status>
+<status status="PASS" endtime="20210122 20:36:59.377" starttime="20210122 20:36:55.067"></status>
 </suite>
-<status status="FAIL" endtime="20190708 22:52:53.064" starttime="20190708 22:52:52.616"></status>
+<status status="PASS" endtime="20210122 20:36:59.379" starttime="20210122 20:36:55.042"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="1">Critical Tests</stat>
-<stat fail="1" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="RobotProject1" pass="1">RobotProject1</stat>
-<stat fail="1" id="s1-s1" name="Test" pass="1">RobotProject1.Test</stat>
-<stat fail="1" id="s1-s1-s1" name="Testsuite1" pass="1">RobotProject1.Test.Testsuite1</stat>
+<stat fail="0" id="s1" name="RobotProject1" pass="2">RobotProject1</stat>
+<stat fail="0" id="s1-s1" name="Test" pass="2">RobotProject1.Test</stat>
+<stat fail="0" id="s1-s1-s1" name="Testsuite1" pass="2">RobotProject1.Test.Testsuite1</stat>
 </suite>
 </statistics>
 <errors>

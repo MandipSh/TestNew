@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200802 21:23:07.565" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/mandip/eclipse-workspace/RobotProject1/test/testsuite1.robot" id="s1" name="Testsuite1">
+<test id="s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World...</arg>
+</arguments>
+<msg timestamp="20200802 21:23:08.178" level="INFO">Hello World...</msg>
+<status status="PASS" endtime="20200802 21:23:08.178" starttime="20200802 21:23:08.175"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Welcome to Robot Framework.</arg>
+</arguments>
+<msg timestamp="20200802 21:23:08.185" level="INFO">Welcome to Robot Framework.</msg>
+<status status="PASS" endtime="20200802 21:23:08.185" starttime="20200802 21:23:08.180"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Jenkins Trigger Test 2</arg>
+</arguments>
+<msg timestamp="20200802 21:23:08.186" level="INFO">Jenkins Trigger Test 2</msg>
+<status status="PASS" endtime="20200802 21:23:08.188" starttime="20200802 21:23:08.185"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Email Test 5.</arg>
+</arguments>
+<msg timestamp="20200802 21:23:08.193" level="INFO">Email Test 5.</msg>
+<status status="PASS" endtime="20200802 21:23:08.193" starttime="20200802 21:23:08.191"></status>
+</kw>
+<status status="PASS" endtime="20200802 21:23:08.193" critical="yes" starttime="20200802 21:23:08.170"></status>
+</test>
+<test id="s1-t2" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://egov.uscis.gov/casestatus/landing.do</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20200802 21:23:08.202" level="INFO">Opening browser 'ff' to base url 'https://egov.uscis.gov/casestatus/landing.do'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200802 21:23:09.947" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200802 21:23:09.948" starttime="20200802 21:23:09.947"></status>
+</kw>
+<msg timestamp="20200802 21:23:09.954" level="FAIL">WebDriverException: Message: invalid argument: can't kill an exited process
+</msg>
+<status status="FAIL" endtime="20200802 21:23:09.954" starttime="20200802 21:23:08.201"></status>
+</kw>
+<status status="FAIL" endtime="20200802 21:23:09.956" critical="yes" starttime="20200802 21:23:08.198">WebDriverException: Message: invalid argument: can't kill an exited process
+</status>
+</test>
+<status status="FAIL" endtime="20200802 21:23:09.957" starttime="20200802 21:23:07.568"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Testsuite1" pass="1">Testsuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
